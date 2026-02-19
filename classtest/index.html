@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #63ff82, #00f2ffd5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #ffffff;
+            width: 500px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .form-header {
+            background: url('https://www.newbreedrevenue.com/hs-fs/hubfs/shutterstock_695711272.jpg?width=5001&name=shutterstock_695711272.jpg') no-repeat center/cover;
+            height: 120px;
+        }
+
+        .form-content {
+            padding-inline: 55px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            color: #333;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #4e73df;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e59d9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-header"></div>
+
+    <div class="form-content">
+        <h2>Customer Feedback</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+             <label for="">Date of Visit</label>
+            <input type="date" required>
+
+
+            <label>Rating</label>
+            <select required>
+                <option value="">Select</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+
+           
+            <label>Your Feedback</label>
+            <textarea rows="4" placeholder="Write your feedback..."></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
