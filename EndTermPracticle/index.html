@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndTerm Practicle - Elegant Temperature Converter</title>
+    <meta name="description" content="A beautiful, interactive real-time temperature converter between Celsius and Fahrenheit.">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <div class="logo-area">
+                <h1><Em>EndTerm Practicle</Em></h1>
+            </div>
+            <p class="subtitle">Convert temperatures instantly between Celsius and Fahrenheit</p>
+        </header>
+
+        <!-- Left Panel: Celsius -->
+        <div class="input-panel celsius-panel" id="celsiusPanel">
+            <div class="panel-header">
+                <h2>Celsius (°C)</h2>
+            </div>
+            <div class="input-wrapper">
+                <input type="number" id="celsiusInput" placeholder="0" step="any" autocomplete="off">
+                <span class="input-unit">°C</span>
+            </div>
+        </div>
+
+        <!-- Right Panel: Fahrenheit -->
+        <div class="input-panel fahrenheit-panel" id="fahrenheitPanel">
+            <div class="panel-header">
+                <h2>Fahrenheit (°F)</h2>
+            </div>
+            <div class="input-wrapper">
+                <input type="number" id="fahrenheitInput" placeholder="32" step="any" autocomplete="off">
+                <span class="input-unit">°F</span>
+            </div>
+        </div>
+
+        <!-- Extra details/formula card -->
+        <footer class="formulas-card">
+            <div class="formula-group">
+                <span class="formula-title">Celsius to Fahrenheit</span>
+                <code>(°C × 9/5) + 32 = °F</code>
+            </div>
+            <div class="divider"></div>
+            <div class="formula-group">
+                <span class="formula-title">Fahrenheit to Celsius</span>
+                <code>(°F − 32) × 5/9 = °C</code>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

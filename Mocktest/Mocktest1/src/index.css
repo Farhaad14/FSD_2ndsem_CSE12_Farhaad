@@ -1,0 +1,8 @@
+body, html, #root {
+  background: url('/bg_image.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}

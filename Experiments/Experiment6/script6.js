@@ -10,10 +10,13 @@ document.getElementById("changeTextBtn").addEventListener("click", function () {
         heading.innerHTML = input.value;
     }
 });
+heading.onmouseover = function(){
+    heading.style.color = "blue"
+}
 
 
 document.getElementById("bgColorBtn").onclick = function () {
-    document.body.style.backgroundColor ="red";
+     document.querySelector(".container").style.backgroundColor = "aquamarine";
        
 };
 

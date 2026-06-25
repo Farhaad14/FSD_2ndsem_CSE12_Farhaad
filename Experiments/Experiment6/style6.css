@@ -12,6 +12,7 @@ body {
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
+    background-color: rgb(173, 217, 255);
 }
 
 button {
